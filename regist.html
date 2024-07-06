@@ -22,19 +22,22 @@
           <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
           <hr>
       <div class ="butons">
-          <button type="submit" class="registerbtn">Register</button>
+          <button type="submit" class="registerbtn" onclick="myFn()">Register</button>
           
         </div>
     </div>
     </div>
         <div class="container signin">
           <p>Already have an account? <a href="#">Sign in</a>.</p>
-           alert('You have sucessfully registered');
+           
 
         </div>
       </form>
 
       <script>
+          function myFn(){
+           alert('You have sucessfully registered');
+          }
         function handleFormSubmit(event) {
             event.preventDefault(); 
         }
