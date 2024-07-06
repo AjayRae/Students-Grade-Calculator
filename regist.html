@@ -25,7 +25,6 @@
           <button type="submit" class="registerbtn">Register</button>
           
         </div>
-                <div id="alertMessage" style="color:red; display:none;">You have successfully registered</div>
     </div>
     </div>
         <div class="container signin">
@@ -36,8 +35,7 @@
       <script>
         function handleFormSubmit(event) {
             event.preventDefault(); 
-            var alertMessage = document.getElementById('alertMessage');
-            alertMessage.style.display='block';
+            alert('You have sucessfully registered');
         }
 
         document.addEventListener('DOMContentLoaded', function() {
