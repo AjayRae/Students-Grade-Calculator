@@ -1,0 +1,60 @@
+* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+  background-color: rgb(143, 247, 247);
+}
+.reg{
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #d8e6b2;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  border-style: hidden;
+}
+
+.registerbtn:hover {
+  opacity:5;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.butons {
+     align-items: center;
+}

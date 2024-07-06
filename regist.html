@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regist.css">
+</head>
+<body>
+    <form action=" " onsubmit="handleFormSubmit(event)">
+        <div class="container">
+            <div class="reg"> 
+          <h1>Register yourself</h1>
+          
+          <hr>
+          
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+        
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+         
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      <div class ="butons">
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </div>
+    </div>
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
+
+      <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); 
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var signInLink = document.querySelector('.container.signin a');
+            signInLink.addEventListener('click', function(event) {
+                window.location.href = "demo.html";
+            });
+        });
+    </script>    
+</body>
+</html>
